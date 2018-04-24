@@ -1,0 +1,24 @@
+<h2>Add a Movie</h2>
+
+<!-- always POST & enctype="multipart/form-data" for file uploads -->
+<form action="/process-movie" method="POST" enctype="multipart/form-data">
+  <label>
+    Title:
+    <input type="text" name="title" placeholder="The Godfather" />
+  </label>
+  <br />
+
+  <label>
+    Description:
+    <input type="text" name="description" placeholder="Italian mafia and stuff" />
+  </label>
+  <br />
+
+  <label>
+    Poster:
+    <input type="file" name="blahUpload" />
+  </label>
+  <br />
+
+  <button>Save This Movie</button>
+</form>
